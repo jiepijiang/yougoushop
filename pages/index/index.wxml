@@ -1,0 +1,51 @@
+<!-- 1.自定义搜索框组件 -->
+<search />
+<!-- 2.轮播图 
+    autoplay  自动播放
+    circular  无缝连接
+    indicator-dots 小圆点指示器
+    indicator-active-color 当前小圆点的颜色 -->
+<swiper class="slider" autoplay circular indicator-dots indicator-active-color="#EA4350">
+	<swiper-item wx:for="{{swiperData}}" wx:key="goods_id">
+		<image class="slider_image" src="{{item.image_src}}"></image>
+	</swiper-item>
+</swiper>
+
+<!-- 3.导航 -->
+<view class="nav">
+	<view class="nav_item" wx:for="{{navData}}" wx:key="name">
+		<!-- 跳转方式1 -->
+
+		<navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}" hover-class="none">
+			<image src="{{item.image_src}}" mode="widthFix"></image>
+		</navigator>
+
+		<!-- 跳转方式2 -->
+		<!-- <image src="{{item.image_src}}" mode="widthFix" bindtap="goToPage" data-item="{{item}}"></image> -->
+	</view>
+</view>
+
+<!-- 商品标题图片 -->
+<block wx:for="{{floorData}}" wx:key="id">
+	<view class="shopTitle">
+		<image src="{{floorData[index].floor_title.image_src}}"></image>
+	</view>
+	<!-- 商品封面部分 -->
+	<view class="product_cover">
+		<view class="left">
+			<image src="{{floorData[index].product_list[0].image_src}}"></image>
+		</view>
+		<view class="right">
+			<view class="top">
+				<view>
+					<image src="{{floorData[index].product_list[1].image_src}}"></image>
+					<image src="{{floorData[index].product_list[2].image_src}}"></image>
+				</view>
+			</view>
+			<view class="bottom">
+				<image src="{{floorData[index].product_list[3].image_src}}"></image>
+				<image src="{{floorData[index].product_list[4].image_src}}"></image>
+			</view>
+		</view>
+	</view>
+</block>

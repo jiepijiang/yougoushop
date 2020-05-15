@@ -1,0 +1,22 @@
+/* components/search/index.wxss */
+.search {
+  background-color: #EA4350;
+  /* width: 750rpx; */
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-in {
+  background-color: #fff;
+  width: 700rpx;
+  height: 80rpx;
+  border-radius: 5rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}

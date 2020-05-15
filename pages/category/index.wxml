@@ -1,0 +1,5 @@
+<!--pages/category/index.wxml-->
+<!--搜索框组件-->
+<search />
+
+<scroll-view></scroll-view>

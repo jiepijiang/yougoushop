@@ -1,0 +1,54 @@
+/**index.wxss**/
+/* 轮播图的样式 */
+.slider,
+.slider_image {
+  width: 750rpx;
+  height: 340rpx;
+}
+
+/* 导航栏的样式 */
+.nav {
+  display: flex;
+  width: 750rpx;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx;
+}
+
+.nav_item {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  margin: 10rpx 30rpx;
+}
+
+.nav_item image {
+  width: 128rpx;
+  height: 140rpx;
+}
+
+/* 商品标题图片 */
+.shopTitle image {
+  width: 750rpx;
+  height: 59rpx;
+  margin: 24rpx 0;
+}
+
+/* 商品的具体图片 */
+.product_cover {
+  display: flex;
+  width: 750rpx;
+  height: 386rpx;
+}
+
+.product_cover .left image {
+  width: 232rpx;
+  height: 386rpx;
+  margin-right: 15rpx;
+}
+
+.product_cover .right image {
+  width: 233rpx;
+  height: 188rpx;
+  margin-right: 15rpx;
+}
